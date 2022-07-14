@@ -46,7 +46,7 @@ q{
     font-size: 1.6em;
     color: var(--Light-Cyan);
 }
-.container .desktop{
+.container {
     margin-top: 3em;
 }
 .container .mobile{
