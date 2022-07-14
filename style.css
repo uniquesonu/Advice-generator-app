@@ -32,7 +32,7 @@ body{
     /* margin-top: 20em; */
     padding: 2.5em;
     border-radius: 15px;
-    
+    user-select: none;
     
 }
 .container p{
@@ -40,13 +40,17 @@ body{
     font-weight: 200;
     margin-bottom: 1em;
     color: var(--Neon-Green);
+    letter-spacing: .2em;
 }
 q{
     font-size: 1.6em;
     color: var(--Light-Cyan);
 }
-.container img{
+.container .desktop{
     margin-top: 3em;
+}
+.container .mobile{
+    display: none;
 }
 .submit{
     all: unset;
@@ -54,6 +58,7 @@ q{
     transform: translateY(100%);
     background-color: var(--Neon-Green);
     cursor: pointer;
+    user-select: none;
 }
 
 .submit img{
@@ -71,4 +76,15 @@ q{
     cursor: pointer;
     box-shadow:  5px 5px 17px var(--Neon-Green),
              -5px -5px 17px var(--Neon-Green);
+}
+
+@media (max-width: 425px) {
+    .container{
+        width: 28em;
+        padding: .5em;
+    }
+    .container .desktop{
+        display: none;
+    }
+    
 }
